@@ -1,0 +1,15 @@
+Rule check version 3.0.0
+
+Given I have a 'string' named 'puzzle'
+
+When I create the count of char '(' found in 'puzzle'
+and I rename the 'count' to 'up'
+When I create the count of char ')' found in 'puzzle'
+and I rename the 'count' to  'down'
+
+When I create the result of 'up' - 'down'
+and I rename the 'result' to 'solution'
+
+Then print 'up'
+Then print 'down'
+Then print 'solution'
