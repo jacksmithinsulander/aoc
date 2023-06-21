@@ -1,5 +1,7 @@
 Rule check version 3.0.0
 
+#Problem can be found at https://adventofcode.com/2015/day/1
+
 Given I have a 'string' named 'puzzle'
 
 When I create the count of char '(' found in 'puzzle'
