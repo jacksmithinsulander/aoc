@@ -15,21 +15,52 @@ When I rename 'new array' to 'num arr'
 
 When I set 'starting val' to '0' as 'number'
 
+When I create the new array
+When I rename 'new array' to 'surface area'
+
 Foreach 'x' in 'puzzle'
+
+When I create the new array
+When I rename 'new array' to 'temp surface area'
+
 When I create the array by splitting 'x' at 'sep'
 When I rename 'array' to 'dimensions'
+
 When I create the copy of element 'one' in array 'dimensions'
 When I rename 'copy' to 'first num'
+
 When I create the copy of element 'two' in array 'dimensions'
 When I rename 'copy' to 'second num'
+
 When I create the copy of element 'three' in array 'dimensions'
 When I rename 'copy' to 'third num'
+
+When I create the result of 'first num' * 'second num'
+When I rename 'result' to 'xy'
+When I copy 'xy' to 'xy copy'
+When I move 'xy copy' in 'temp surface area'
+
+When I create the result of 'second num' * 'third num'
+When I rename 'result' to 'yz'
+When I copy 'yz' to 'yz copy'
+When I move 'yz copy' in 'temp surface area'
+
+When I create the result of 'third num' * 'first num'
+When I rename 'result' to 'zy'
+When I copy 'zy' to 'zy copy'
+When I move 'zy copy' in 'temp surface area'
+
 When I move 'dimensions' in 'num arr'
-When I append
+When I move 'temp surface area' in 'surface area'
+
 When I remove 'first num'
 When I remove 'second num'
 When I remove 'third num'
+When I remove 'xy'
+When I remove 'yz'
+When I remove 'zy'
 EndForeach
 
-Then print data
+#Then print data
 Then print 'num arr' as 'integer'
+Then print 'surface area' as 'integer'
