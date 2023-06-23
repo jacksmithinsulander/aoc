@@ -11,7 +11,8 @@ When I rename 'new array' to 'num arr'
 
 Foreach 'x' in 'puzzle'
 When I create the array by splitting 'x' at 'sep'
-When I move 'array' in 'num arr'
+When I rename 'array' to 'dimensions'
+When I move 'dimensions' in 'num arr'
 EndForeach
 
 Then print data
