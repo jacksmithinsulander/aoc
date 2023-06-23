@@ -1,0 +1,18 @@
+Rule check version 3.0.0
+
+#Problem can be found at https://adventofcode.com/2015/day/2
+
+Given I have a 'string array' named 'puzzle'
+
+When I set 'sep' to 'x' as 'string'
+
+When I create the new array
+When I rename 'new array' to 'num arr'
+
+Foreach 'x' in 'puzzle'
+When I create the array by splitting 'x' at 'sep'
+When I move 'array' in 'num arr'
+EndForeach
+
+Then print data
+Then print 'num arr' as 'integer'
