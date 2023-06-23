@@ -1,0 +1,36 @@
+Rule check version 3.0.0
+
+When I set 'fizz' to '3' as 'number'
+When I set 'buzz' to '5' as 'number'
+When I set 'fizzbuzz' to '15' as 'number'
+
+When I set 'alpha' to '1' as 'number'
+When I set 'omega' to '101' as 'number'
+
+When I set 'zero' to '0' as 'number'
+
+When I create the 'string array' named 'fizzbuzz arr'
+
+Foreach 'i' in sequence from 'alpha' to 'omega' with step 'alpha'
+When I create the result of 'i' % 'fizz'
+and I rename the 'result' to 'fizz test'
+When I create the result of 'i' % 'buzz'
+and I rename the 'result' to 'buzz test'
+When I create the result of 'i' % 'fizzbuzz'
+and I rename the 'result' to 'fizzbuzz test'
+IIf I verify that 'fizzbuzz test' is equal to 'zero'
+When I set 'word' to 'fizzbuzz' as 'string'
+When I move 'word' to 'fizzbuzz arr'
+Endif
+f I verify that 'fizz test' is equal to 'zero'
+When I set 'word' to 'fizz' as 'string'
+When I move 'word' in 'fizzbuzz arr'
+Endif
+If I verify that 'buzz test' is equal to 'zero'
+Wen I seth 'word' to 'buzz' as 'string'
+When I move 'word' in 'fizzbuzz arr'
+Endif
+When I move 'i' in 'fizzbuzz arr'
+EndForeach
+
+Then print 'fizzbuzz arr'

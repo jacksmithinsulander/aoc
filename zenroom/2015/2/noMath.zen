@@ -6,13 +6,29 @@ Given I have a 'string array' named 'puzzle'
 
 When I set 'sep' to 'x' as 'string'
 
+When I set 'one' to '1' as 'number'
+When I set 'two' to '2' as 'number'
+When I set 'three' to '3' as 'number'
+
 When I create the new array
 When I rename 'new array' to 'num arr'
+
+When I set 'starting val' to '0' as 'number'
 
 Foreach 'x' in 'puzzle'
 When I create the array by splitting 'x' at 'sep'
 When I rename 'array' to 'dimensions'
+When I create the copy of element 'one' in array 'dimensions'
+When I rename 'copy' to 'first num'
+When I create the copy of element 'two' in array 'dimensions'
+When I rename 'copy' to 'second num'
+When I create the copy of element 'three' in array 'dimensions'
+When I rename 'copy' to 'third num'
 When I move 'dimensions' in 'num arr'
+When I append
+When I remove 'first num'
+When I remove 'second num'
+When I remove 'third num'
 EndForeach
 
 Then print data
