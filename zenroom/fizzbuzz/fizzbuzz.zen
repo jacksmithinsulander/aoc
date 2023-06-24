@@ -1,0 +1,52 @@
+Rule check version 3.0.0
+
+Given nothing
+
+When I set 'fizz' to '3' as 'number'
+When I set 'buzz' to '5' as 'number'
+When I set 'fizzbuzz' to '15' as 'number'
+
+When I set 'alpha' to '1' as 'number'
+When I set 'omega' to '101' as 'number'
+
+When I set 'zero' to '0' as 'number'
+
+When I create the 'string array' named 'fizzbuzz arr'
+
+Foreach 'i' in sequence from 'alpha' to 'omega' with step 'alpha'
+	When I create the result of 'i' % 'fizz'
+	and I rename the 'result' to 'fizz test'
+	When I create the result of 'i' % 'buzz'
+	and I rename the 'result' to 'buzz test'
+	When I create the result of 'i' % 'fizzbuzz'
+	and I rename the 'result' to 'fizzbuzz test'
+
+	If I verify 'fizzbuzz test' is equal to 'zero'
+		When I set 'word' to 'fizzbuzz' as 'string'
+		When I move 'word' in 'fizzbuzz arr'
+	Endif
+
+	If I verify 'fizz test' is equal to 'zero'
+	If I verify number 'fizzbuzz test' is more than 'zero'
+		When I set 'word' to 'fizz' as 'string'
+		When I move 'word' in 'fizzbuzz arr'
+	Endif
+
+	If I verify 'buzz test' is equal to 'zero'
+	If I verify number 'fizzbuzz test' is more than 'zero'
+		When I set 'word' to 'buzz' as 'string'
+		When I move 'word' in 'fizzbuzz arr'
+	Endif
+
+	If I verify number 'fizzbuzz test' is more than 'zero'
+	If I verify number 'fizz test' is more than 'zero'
+	If I verify number 'buzz test' is more than 'zero'
+		When I move 'i' in 'fizzbuzz arr'
+	Endif
+
+	When I remove 'fizz test'
+	When I remove 'buzz test'
+	When I remove 'fizzbuzz test'
+EndForeach
+
+Then print 'fizzbuzz arr'
