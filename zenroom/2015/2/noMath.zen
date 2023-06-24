@@ -49,18 +49,18 @@ Foreach 'x' in 'puzzle'
 	When I create the result of 'third num' * 'first num'
 	When I rename 'result' to 'zx'
 
-	If I verify number 'yz' is more than 'xy'
-	If I verify number 'zx' is more than 'xy'
+	If I verify number 'yz' is more or equal than 'xy'
+	If I verify number 'zx' is more or equal than 'xy'
 		When I copy 'xy' to 'smol'
 	Endif
 
-	If I verify number 'xy' is more than 'yz'
-	If I verify number 'zx' is more than 'yz'
+	If I verify number 'xy' is more or equal than 'yz'
+	If I verify number 'zx' is more or equal than 'yz'
 		When I copy 'yz' to 'smol'
 	Endif
 
-	If I verify number 'xy' is more than 'zx'
-	if I verify number 'yz' is more than 'zx'
+	If I verify number 'xy' is more or equal than 'zx'
+	if I verify number 'yz' is more or equal than 'zx'
 		When I copy 'zx' to 'smol'
 	Endif
 
