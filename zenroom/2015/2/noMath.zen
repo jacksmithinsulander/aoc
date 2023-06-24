@@ -64,13 +64,14 @@ Foreach 'x' in 'puzzle'
 		When I copy 'zx' to 'smol'
 	Endif
 
-	When I create the result of '(xy * 2) + (yz * 2) + (zx * 2) + smol'
-	When I rename the 'result' to 'amount wrapping paper'
+	#When I create the result of '(xy * 2) + (yz * 2) + (zx * 2) + smol'
+	#When I rename the 'result' to 'amount wrapping paper'
 
-	When I move 'amount wrapping paper' in 'num arr'
+	#When I move 'amount wrapping paper' in 'num arr'
+	When I move 'smol' in 'num arr'
 
 	When I remove 'dimensions'
-	When I remove 'smol'
+	#When I remove 'smol'
 	When I remove 'first num'
 	When I remove 'second num'
 	When I remove 'third num'
@@ -80,5 +81,5 @@ Foreach 'x' in 'puzzle'
 EndForeach
 
 #Then print data
-#Then print 'num arr' as 'integer'
-Then print 'surface area' as 'integer'
+Then print 'num arr' as 'integer'
+#Then print 'surface area' as 'integer'
