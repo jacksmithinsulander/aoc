@@ -42,22 +42,38 @@ Foreach 'x' in 'puzzle'
 	
 	When I create the result of 'first num' * 'second num'
 	When I rename 'result' to 'xy'
-	When I copy 'xy' to 'xy copy'
-	When I move 'xy copy' in 'temp surface area'
+	#When I copy 'xy' to 'xy copy'
+	#When I move 'xy copy' in 'temp surface area'
 	
 	
 	When I create the result of 'second num' * 'third num'
 	When I rename 'result' to 'yz'
-	When I copy 'yz' to 'yz copy'
-	When I move 'yz copy' in 'temp surface area'
+	#When I copy 'yz' to 'yz copy'
+	#When I move 'yz copy' in 'temp surface area'
 	
 	When I create the result of 'third num' * 'first num'
-	When I rename 'result' to 'zy'
-	When I copy 'zy' to 'zy copy'
-	When I move 'zy copy' in 'temp surface area'
+	When I rename 'result' to 'zx'
+	#When I copy 'zx' to 'zy copy'
+	#When I move 'zx copy' in 'temp surface area'
+
+	If I verify number 'xy' is less than 'yz'
+	If I verify number 'xy' is less than 'zx'
+		
+	Endif
+
+	If I verify number 'yz' is less than 'xy'
+	If I verify number 'yz' is less than 'zx'
+
+	Endif
+
+	If I verify number 'zx' is less than 'xy'
+	if I verify number 'zx' is less than 'yz'
+
+	Endif
+	
 
 	When I move 'dimensions' in 'num arr'
-	When I move 'temp surface area' in 'surface area'
+	#When I move 'temp surface area' in 'surface area'
 	
 	When I remove 'first num'
 	When I remove 'second num'
