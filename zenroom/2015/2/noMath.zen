@@ -19,8 +19,8 @@ When I create the new array
 When I rename 'new array' to 'surface area'
 
 Foreach 'x' in 'puzzle'
-	#When I create the new array
-	#When I rename 'new array' to 'temp surface area'
+	When I create the new array
+	When I rename 'new array' to 'temp surface area'
 
 	When I create the array by splitting 'x' at 'sep'
 	When I rename 'array' to 'dimensions'
@@ -42,33 +42,36 @@ Foreach 'x' in 'puzzle'
 	
 	When I create the result of 'first num' * 'second num'
 	When I rename 'result' to 'xy'
+	When I copy 'xy' to 'xy copy'
+	When I move 'xy copy' in 'temp surface area'
 	
 	When I create the result of 'second num' * 'third num'
 	When I rename 'result' to 'yz'
+	When I copy 'yz' to 'yz copy'
+	When I move 'yz copy' in 'temp surface area'
 	
 	When I create the result of 'third num' * 'first num'
 	When I rename 'result' to 'zx'
+	When I copy 'zx' to 'zx copy'
+	When I move 'zx copy' in 'temp surface area'
 
-	If I verify number 'yz' is more or equal than 'xy'
-	If I verify number 'zx' is more or equal than 'xy'
-		When I copy 'xy' to 'smol'
-	Endif
+	When I create the copy of element 'one' in array 'temp surface area'
+	and I rename 'copy' to 'smol'
 
-	If I verify number 'xy' is more or equal than 'yz'
-	If I verify number 'zx' is more or equal than 'yz'
-		When I copy 'yz' to 'smol'
-	Endif
-
-	If I verify number 'xy' is more or equal than 'zx'
-	if I verify number 'yz' is more or equal than 'zx'
-		When I copy 'zx' to 'smol'
-	Endif
+	Foreach 'i' in 'temp surface area'
+		If I verify that 'i' is less than 'smol'
+			When I remove 'smol'
+			and I rename 'i' to 'smol'
+		Endif
+	EndForeach
 
 	#When I create the result of '(xy * 2) + (yz * 2) + (zx * 2) + smol'
 	#When I rename the 'result' to 'amount wrapping paper'
-
+	
 	#When I move 'amount wrapping paper' in 'num arr'
 	When I move 'smol' in 'num arr'
+
+	When I move 'temp surface area' in 'surface area'
 
 	When I remove 'dimensions'
 	#When I remove 'smol'
@@ -82,4 +85,5 @@ EndForeach
 
 #Then print data
 Then print 'num arr' as 'integer'
+#Then print 'surface area' as 'integer'
 #Then print 'surface area' as 'integer'
