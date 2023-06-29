@@ -1,0 +1,25 @@
+Rule check version 3.0.0
+
+Given nothing
+
+When I set 'a' to '0' as 'number'
+When I set 'b' to '1' as 'number'
+
+When I set 'alpha' to '1' as 'number'
+When I set 'omega' to '30' as 'number'
+
+When I create the 'number array' named 'fibonacci arr'
+
+Foreach 'i' in sequence from 'alpha' to 'omega' with step 'alpha'
+	When I copy 'b' to 'fib'
+	When I move 'fib' in 'fibonacci arr'
+	When I create the result of 'a' + 'b'
+	and I rename the 'result' to 'c'
+	
+	When I remove 'a'
+	When I rename 'b' to 'a'
+	When I rename 'c' to 'b'
+EndForeach
+
+
+Then print 'fibonacci arr' as 'integer'
