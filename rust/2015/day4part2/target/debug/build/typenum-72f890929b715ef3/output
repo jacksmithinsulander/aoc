@@ -1,3 +1,0 @@
-cargo:rerun-if-changed=build/main.rs
-cargo:rustc-env=TYPENUM_BUILD_CONSTS=/home/ted/prog/aoc/rust/2015/day4/target/debug/build/typenum-72f890929b715ef3/out/consts.rs
-cargo:rustc-env=TYPENUM_BUILD_OP=/home/ted/prog/aoc/rust/2015/day4/target/debug/build/typenum-72f890929b715ef3/out/op.rs
