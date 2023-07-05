@@ -1,0 +1,11 @@
+/home/ted/prog/aoc/rust/2015/day4/target/debug/deps/byte_tools-7dec5fe62e4a4da0.rmeta: /home/ted/.cargo/registry/src/index.crates.io-6f17d22bba15001f/byte-tools-0.2.0/src/lib.rs /home/ted/.cargo/registry/src/index.crates.io-6f17d22bba15001f/byte-tools-0.2.0/src/read_single.rs /home/ted/.cargo/registry/src/index.crates.io-6f17d22bba15001f/byte-tools-0.2.0/src/write_single.rs /home/ted/.cargo/registry/src/index.crates.io-6f17d22bba15001f/byte-tools-0.2.0/src/read_slice.rs /home/ted/.cargo/registry/src/index.crates.io-6f17d22bba15001f/byte-tools-0.2.0/src/write_slice.rs
+
+/home/ted/prog/aoc/rust/2015/day4/target/debug/deps/libbyte_tools-7dec5fe62e4a4da0.rlib: /home/ted/.cargo/registry/src/index.crates.io-6f17d22bba15001f/byte-tools-0.2.0/src/lib.rs /home/ted/.cargo/registry/src/index.crates.io-6f17d22bba15001f/byte-tools-0.2.0/src/read_single.rs /home/ted/.cargo/registry/src/index.crates.io-6f17d22bba15001f/byte-tools-0.2.0/src/write_single.rs /home/ted/.cargo/registry/src/index.crates.io-6f17d22bba15001f/byte-tools-0.2.0/src/read_slice.rs /home/ted/.cargo/registry/src/index.crates.io-6f17d22bba15001f/byte-tools-0.2.0/src/write_slice.rs
+
+/home/ted/prog/aoc/rust/2015/day4/target/debug/deps/byte_tools-7dec5fe62e4a4da0.d: /home/ted/.cargo/registry/src/index.crates.io-6f17d22bba15001f/byte-tools-0.2.0/src/lib.rs /home/ted/.cargo/registry/src/index.crates.io-6f17d22bba15001f/byte-tools-0.2.0/src/read_single.rs /home/ted/.cargo/registry/src/index.crates.io-6f17d22bba15001f/byte-tools-0.2.0/src/write_single.rs /home/ted/.cargo/registry/src/index.crates.io-6f17d22bba15001f/byte-tools-0.2.0/src/read_slice.rs /home/ted/.cargo/registry/src/index.crates.io-6f17d22bba15001f/byte-tools-0.2.0/src/write_slice.rs
+
+/home/ted/.cargo/registry/src/index.crates.io-6f17d22bba15001f/byte-tools-0.2.0/src/lib.rs:
+/home/ted/.cargo/registry/src/index.crates.io-6f17d22bba15001f/byte-tools-0.2.0/src/read_single.rs:
+/home/ted/.cargo/registry/src/index.crates.io-6f17d22bba15001f/byte-tools-0.2.0/src/write_single.rs:
+/home/ted/.cargo/registry/src/index.crates.io-6f17d22bba15001f/byte-tools-0.2.0/src/read_slice.rs:
+/home/ted/.cargo/registry/src/index.crates.io-6f17d22bba15001f/byte-tools-0.2.0/src/write_slice.rs:
