@@ -1,0 +1,7 @@
+Rule caller restroom-mw
+Rule check version 3.0.0
+
+Given that I have an endpoint named 'randomJokes'
+and I set the 'randomJokes' to 'https://official-joke-api.appspot.com/random_joke'
+Given I connect to 'randomJokes' and save the output into 'uniqueJoke'
+Then print the 'uniqueJoke'
